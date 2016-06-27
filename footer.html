@@ -1,0 +1,88 @@
+
+
+
+
+<script>
+
+  /* $(".collapse").addClass("in");*/
+
+</script>
+
+<script>
+  $(function () {
+    $('#accordion').on('shown.bs.collapse', function (e) {
+      var offset = $('.panel.panel-default > .panel-collapse.in').offset();
+      if(offset) {
+        $('html,body').animate({
+          scrollTop: $('.panel-title a').offset().top -20
+        }, 500); 
+      }
+    }); 
+  });
+</script>
+
+
+
+<!--
+<script src="inlineDisqussions/inlineDisqussions.js"></script>
+<link rel="stylesheet" type="text/css" href="inlineDisqussions/inlineDisqussions.css" />
+<script>
+disqus_shortname = 'yapaka';
+jQuery(document).ready(function() {
+
+
+jQuery(".panel").inlineDisqussions({
+identifier: 'disqussion',
+displayCount: true,
+highlighted: false
+
+});
+
+
+
+});
+</script>
+
+-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-204371-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<div id="yapaka">
+
+  <div class="logo">
+     <span class="title"> Un web documentaire de </span> <a href="http://www.yapaka.be" target="_blank"><img src="image/yapaka-couleur.png"/></a>
+
+    <a href="http://www.cfwb.be"  target="_blank"><img src="image/fwb.png"/></a>
+  
+
+  
+  </div>
+  
+  
+  
+   
+
+  <!--
+<div class="navigation">
+<a href="http://yapaka.be/page/la-coordination-de-laide-aux-victimes-de-maltraitance" target="_blank">A propos</a> | <a href="http://yapaka.be/contenu?type=publication" target="_blank">Livres, vidéos, podcasts</a> | <a href="http://yapaka.be/campagnes" target="_blank">Campagnes</a> | <a href="http://yapaka.be/professionnels" target="_blank">Professionnels</a> | <a href="http://yapaka.be/nous_contacter" target="_blank">Contact</a>
+</div>
+-->
+
+</div>
+
+
+    
+
+
+
+
